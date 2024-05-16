@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body {
+    background: white;
+    color: rgb(0, 16, 158);
+    font: 14px / 28px;
+    font-family:  'Raleway', arial;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+}
