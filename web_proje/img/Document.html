@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/web_proje/html/giris.html -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_s9WEUc"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./Document_files/giris.css"></head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/web_proje/html/index.html">Hakkımda</a></li>
+                <li style="float: right;"><a href="http://127.0.0.1:5500/web_proje/html/sehrim.html">Şehrim</a></li>
+                <li style="float: right;"><a href="http://127.0.0.1:5500/web_proje/html/miras.html">Mirasımız</a></li>
+                <li style="float: right;"><a href="http://127.0.0.1:5500/web_proje/html/iletisim.html">İletişim</a></li>
+                <li class="active" style="float: right;"><a href="http://127.0.0.1:5500/web_proje/html/giris.html">Giriş</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="bosluk"></div>
+    <div class="bosluk"></div>
+
+    <div class="sehrim-container">
+        <form action="http://127.0.0.1:5500/web_proje/php/login.php" method="post">
+        <h1>Giriş</h1>
+        <br>
+        <label for="">Kullanıcı Adı</label>
+        <input type="email" name="uname" placeholder="Kullanıcı Adı" wfd-id="id0">
+        <br>
+        <label for="">Parola</label>
+        <input type="password" name="password" placeholder="Parola" wfd-id="id1">
+        <button type="submit">Giriş</button>
+        <br>
+        
+        </form>
+    </div>
+    <div class="bosluk"></div>
+    <div class="bosluk"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Site</h4>
+                    <a href="http://127.0.0.1:5500/web_proje/html/giris.html"><p>Giriş</p></a>
+                    <a href="http://127.0.0.1:5500/web_proje/html/iletisim.html"><p>İletişim</p></a>
+                    <a href="http://127.0.0.1:5500/web_proje/html/index.html"><p>Hakkımda</p></a>
+                    <a href="http://127.0.0.1:5500/web_proje/html/miras.html"><p>Mirasımız</p></a>
+                    <a href="http://127.0.0.1:5500/web_proje/html/sehrim.html"><p>Şehrim</p></a>
+                    
+                </div>
+                <div class="col">
+                    <h4>Yardım al</h4>
+                    <p>Mail Adresi: asgultekin@gmail.com</p>
+                </div>
+                <div class="col">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                        <a href="https://x.com/" class="fab fa-twitter-f"></a>
+                        <a href="https://www.instagram.com/" class="fab fa-instagram-f"></a>
+                        <a href="https://www.linkedin.com/" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
